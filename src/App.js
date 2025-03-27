@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import charts from './components/Charts.js';
+import chatbot from './components/chatbot.js';
 
 const FinanceHome = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -253,10 +255,10 @@ const FinanceHome = () => {
         <div className="logo">MetAI</div>
         <nav className="nav">
           <ul>
-            <li><a href="http://localhost:3006" className="active">Home</a></li>
-            <li><a href="http://localhost:3006">Dashbord</a></li>
-            <li><a href="http://localhost:3006">Portfolio</a></li>
-            <li><a href="http://localhost:3006">MetAI-assistant</a></li>
+            <li><a href="#" className="active">Home</a></li>
+            <li><a href="#">Dashbord</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">MetAI-assistant</a></li>
           </ul>
         </nav>
         <div className="header-actions">
