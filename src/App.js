@@ -255,9 +255,9 @@ const FinanceHome = () => {
         <nav className="nav">
           <ul>
             <li><a href="#" className="active">Home</a></li>
-            <li><a href="http://localhost:3002">Dashbord</a></li>
-            <li><a href="#">Statistics</a></li>
-            <li><a href="http://localhost:3000">MetAI-assistant</a></li>
+            <li><a href="http://localhost:3003">Dashbord</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="http://localhost:3001">MetAI-assistant</a></li>
           </ul>
         </nav>
         <div className="header-actions">
@@ -297,29 +297,7 @@ const FinanceHome = () => {
           </div>
         </section>
 
-        <section className="ai-assistant-section">
-          <h2>AI Financial Assistant</h2>
-          <div className="ai-interface">
-            <form onSubmit={handleAiRequest}>
-              <input 
-                type="text" 
-                placeholder="Ask about market trends, price predictions, or trading strategies..." 
-                value={aiPrompt}
-                onChange={(e) => setAiPrompt(e.target.value)}
-              />
-              <button type="submit" disabled={isAiLoading}>
-                {isAiLoading ? 'Analyzing...' : 'Get AI Insights'}
-              </button>
-            </form>
-            {aiResponse && (
-              <div className="ai-response">
-                <h3>AI Analysis:</h3>
-                <p>{aiResponse}</p>
-              </div>
-            )}
-          </div>
-        </section>
-
+        
         <section className="trending-section">
           <h2>Trending Cryptocurrencies</h2>
           {dataLoading ? (
