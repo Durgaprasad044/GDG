@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+    @apply bg-black text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Optional: Additional custom utilities if needed */
+.portfolio-shadow {
+    @apply shadow-lg shadow-white/10 hover:shadow-white/20 transition-shadow;
+}
+
+.portfolio-border {
+    @apply border border-gray-800 hover:border-gray-700;
+}
+
+.portfolio-transition {
+    @apply transition-all duration-300 ease-in-out;
+}
+
+/* Responsive typography */
+@screen md {
+    .responsive-heading {
+        @apply text-5xl;
+    }
+}
+
+@screen sm {
+    .responsive-heading {
+        @apply text-4xl;
+    }
+}
