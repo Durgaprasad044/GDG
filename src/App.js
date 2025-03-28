@@ -255,9 +255,9 @@ const FinanceHome = () => {
         <nav className="nav">
           <ul>
             <li><a href="#" className="active">Home</a></li>
-            <li><a href="http://localhost:3003">Dashbord</a></li>
+            <li><a href="http://localhost:3001">Dashbord</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="http://localhost:3001">MetAI-assistant</a></li>
+            <li><a href="http://localhost:3002">MetAI-assistant</a></li>
           </ul>
         </nav>
         <div className="header-actions">
