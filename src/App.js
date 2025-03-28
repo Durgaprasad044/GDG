@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import charts from './components/Portfolio.js';
-import chatbot from './components/chatbot.js';
 import Dashboard from './components/Dashboard.js';
 
 const FinanceHome = () => {
