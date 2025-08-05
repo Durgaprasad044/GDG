@@ -275,7 +275,7 @@ main {
 
 /* Trending Section */
 .trending-section {
-  background-color: white;
+  background-color: rgb(21, 1, 1);
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
